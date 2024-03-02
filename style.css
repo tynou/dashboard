@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* border: 1px dashed red; */
+}
+
+:root {
+    --white: #f8fafc;
+    --orange: #fb923c;
+    --blu: #bdddf3;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+}
+
+.black {
+    color: #000000;
+}
+
+.icon {
+    --size: 24px;
+
+    width: var(--size);
+
+    fill: var(--white);
+
+    flex: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template: auto 3fr / 1fr 4fr;
+}
+
+.sidebar {
+    padding: 16px;
+
+    background-color: var(--orange);
+
+    grid-area: 1 / 1 / -1 / 2;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.button-group {
+    padding: 16px 0;
+}
+
+.nav-button {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+}
+
+.header {
+    background-color: var(--white);
+
+    grid-area: 1 / 2 / 1 / -1;
+
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+
+    padding: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search {
+    flex: 1;
+    background-color: grey;
+    border-radius: 16px;
+    height: 1.5rem;
+}
+
+.profile-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.username {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.greeting {
+    display: grid;
+    grid-template: 1fr 1fr / auto 1fr;
+    gap: 0.25rem;
+}
+
+.greet-text {
+    font-size: 1rem;
+    align-self: flex-end;
+}
+
+.greet-username {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.profile-img-big {
+    height: 5rem;
+    width: 5rem;
+    grid-area: 1 / 1 / -1 / 1;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--orange);
+    height: 2rem;
+    width: 6rem;
+    border-radius: 1rem;
+}
+
+.main-content {
+    background-color: var(--blu);
+    
+    grid-area: 2 / 2 / -1 / -1;
+
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    gap: 1rem;
+
+    padding: 1rem;
+}
+
+.projects {
+    grid-area: 1 / 1 / -1 / 1;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+.content-card {
+    background-color: var(--white);
+
+    display: grid;
+    
+}
+
+.trending {
+    grid-area: 2 / 2 / -1 / -1;
+}
