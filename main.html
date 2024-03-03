@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
         <title>Admin Dashboard</title>
     </head>
@@ -15,26 +15,32 @@
 
             <div class="button-group">
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/home.svg" alt="" class="icon">
                     <p class="nav-text">Home</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/profiles.svg" alt="" class="icon">
                     <p class="nav-text">Profiles</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/messages.svg" alt="" class="icon">
                     <p class="nav-text">Messages</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/history.svg" alt="" class="icon">
                     <p class="nav-text">History</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/tasks.svg" alt="" class="icon">
                     <p class="nav-text">Tasks</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/communities.svg" alt="" class="icon">
                     <p class="nav-text">Communities</p>
                 </div>
@@ -42,14 +48,17 @@
 
             <div class="button-group">
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/settings.svg" alt="" class="icon">
                     <p class="nav-text">Settings</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/support.svg" alt="" class="icon">
                     <p class="nav-text">Support</p>
                 </div>
                 <div class="nav-button">
+                    <div class="side-line"></div>
                     <img src="./icons/privacy.svg" alt="" class="icon">
                     <p class="nav-text">Privacy</p>
                 </div>
@@ -59,7 +68,7 @@
         <div class="header">
             <div class="search-bar">
                 <img src="./icons/search.svg" alt="" class="icon">
-                <input class="search" placeholder="..."></input>
+                <input type="text" class="search">
             </div>
 
             <div class="profile-container">
@@ -70,8 +79,10 @@
 
             <div class="greeting">
                 <img src="./icons/account.svg" alt="" class="profile-img-big">
-                <p class="greet-text black">Greetings,</p>
-                <p class="greet-username black">John Doe</p>
+                <div class="greeting-text">
+                    <p class="greet-text black">Hi there,</p>
+                    <p class="greet-username black">John Doe (@shitass)</p>
+                </div>
             </div>
 
             <div class="buttons">
@@ -85,11 +96,38 @@
             <div class="projects">
                 <h1 class="content-header black">Your Projects</h1>
 
-                <div class="content">
+                <div class="project-content">
                     <div class="content-card">
+                        <div class="color-code"></div>
                         <div class="card-text">
-                            <h1 class="card-title black">Title</h1>
-                            <p class="card-desc black">Description</p>
+                            <h1 class="card-title black">Calculator</h1>
+                            <p class="card-desc grey">It's a calculator. Everyone knows what a calculator is, right? You just press the numbers and the operand buttons and it calculates stuff. That's what calculators do.</p>
+                        </div>
+                        <div class="card-btns">
+                            <img src="./icons/star.svg" alt="" class="icon">
+                            <img src="./icons/trash.svg" alt="" class="icon">
+                            <img src="./icons/plus.svg" alt="" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="color-code"></div>
+                        <div class="card-text">
+                            <h1 class="card-title black">Calculator</h1>
+                            <p class="card-desc grey">It's a calculator. Everyone knows what a calculator is, right? You just press the numbers and the operand buttons and it calculates stuff. That's what calculators do.</p>
+                        </div>
+                        <div class="card-btns">
+                            <img src="./icons/star.svg" alt="" class="icon">
+                            <img src="./icons/trash.svg" alt="" class="icon">
+                            <img src="./icons/plus.svg" alt="" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="color-code"></div>
+                        <div class="card-text">
+                            <h1 class="card-title black">Calculator</h1>
+                            <p class="card-desc grey">It's a calculator. Everyone knows what a calculator is, right? You just press the numbers and the operand buttons and it calculates stuff. That's what calculators do.</p>
                         </div>
                         <div class="card-btns">
                             <img src="./icons/star.svg" alt="" class="icon">
@@ -102,15 +140,64 @@
 
             <div class="announcements">
                 <h1 class="content-header black">Announcements</h1>
-                <div class="content">
 
+                <div class="announcement-content">
+                    <div class="announcement">
+                        <h1 class="announcement-header black">Attention</h1>
+                        <p class="announcement-text grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quia numquam.</p>
+                    </div>
+
+                    <div class="announcement-separator"></div>
+
+                    <div class="announcement">
+                        <h1 class="announcement-header black">Site Maintenance</h1>
+                        <p class="announcement-text grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quia numquam.</p>
+                    </div>
+
+                    <div class="announcement-separator"></div>
+
+                    <div class="announcement">
+                        <h1 class="announcement-header black">Privacy Policy Update</h1>
+                        <p class="announcement-text grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quia numquam.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="trending">
                 <h1 class="content-header black">Trending</h1>
-                <div class="content">
 
+                <div class="trending-content">
+                    <div class="trending-user">
+                        <img src="./icons/account.svg" alt="" class="profile-img">
+                        <div class="trending-text">
+                            <h1 class="trending-username black">@randomass</h1>
+                            <p class="trending-status grey">Shitass</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-user">
+                        <img src="./icons/account.svg" alt="" class="profile-img">
+                        <div class="trending-text">
+                            <h1 class="trending-username black">@randomass</h1>
+                            <p class="trending-status grey">Shitass</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-user">
+                        <img src="./icons/account.svg" alt="" class="profile-img">
+                        <div class="trending-text">
+                            <h1 class="trending-username black">@randomass</h1>
+                            <p class="trending-status grey">Shitass</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-user">
+                        <img src="./icons/account.svg" alt="" class="profile-img">
+                        <div class="trending-text">
+                            <h1 class="trending-username black">@randomass</h1>
+                            <p class="trending-status grey">Shitass</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
